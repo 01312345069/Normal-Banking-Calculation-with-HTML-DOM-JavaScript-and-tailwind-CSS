@@ -5,6 +5,9 @@
 3. get previous withdrow total.
 4. Calculate total withdraw amount.
 4-5 Set total withdraw amount
+5. get the prevous balance total.
+6. Calculate the new balance total
+6-5 set the new blance total.
 
 
 step-7 clear the deposit field .
