@@ -6,6 +6,9 @@
 4. Calculate total withdraw amount.
 4-5 Set total withdraw amount
 
+
+step-7 clear the deposit field .
+
 */
 
 // step-1
@@ -24,6 +27,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     // step-4 
     const currentWithdrawTotal = previousWithdrawTotal + newWithDrawAmount;
     withdrawTotalElement.innerText = currentWithdrawTotal;
+
+
+    // step-7: 
+    withdrawField.value = '';
 
 
 
