@@ -1,8 +1,10 @@
 /*
 1: add event handler with the withdraw button 
 2. get the windraw amount from the withdraw input field.
-2.5 alson make sure to convert the input into a number by usuing parseFloat.
+2-5 alson make sure to convert the input into a number by usuing parseFloat.
 3. get previous withdrow total.
+4. Calculate total withdraw amount.
+4-5 Set total withdraw amount
 
 */
 
@@ -17,7 +19,12 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     // step-3:
     const withdrawTotalElement = document.getElementById('withdraw-total');
     const previousWithdrawTotalString = withdrawTotalElement.innerText;
-    const previousBalanceTotal = parseFloat(previousWithdrawTotalString);
-    console.log(previousBalanceTotal);
+    const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
+
+    // step-4 
+    const currentWithdrawTotal = previousWithdrawTotal + newWithDrawAmount;
+    withdrawTotalElement.innerText = currentWithdrawTotal;
+
+
 
 })
